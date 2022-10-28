@@ -10,6 +10,17 @@ __YUV格式有两大类__：`planar` 和 `packed`:
 
 `packed`的`YUV`格式，每个像素点的`Y,U,V`是连续交错存储的。
 
+```python
+    Y Y Y Y Y Y                   
+    Y Y Y Y Y Y                  
+    Y Y Y Y Y Y                   
+    Y Y Y Y Y Y                    
+    U U U U U U                        Y U Y V Y U Y V Y U Y V
+    U U U U U U                        Y U Y V Y U Y V Y U Y V
+    V V V V V V                        Y U Y V Y U Y V Y U Y V
+    V V V V V V                        Y U Y V Y U Y V Y U Y V
+    - Planar -                          - Packed -
+```
 **YUV与RGB的转换公式**
 
 ```python
