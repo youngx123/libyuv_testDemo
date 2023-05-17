@@ -121,4 +121,5 @@ libyuv::ARGBToI420(
 `yuyv(yuy2) ---> I420 ---> I420Scale ---> BGRA`
 
 缩放后图片：
+
 <img style="margin:10px auto;display:block" width=224 src="./img/yuyv2i420_scale.jpg"/>
